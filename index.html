@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jonnathan Carvalho — Researcher & Professor</title>
+  <title>Jonnathan Carvalho — AI Researcher & Professor</title>
   <meta name="description" content="Professor e pesquisador no Instituto Federal Fluminense (IFF). Doutor em Computação pela UFF. Pesquisa em IA, Machine Learning, Deep Learning e NLP.">
   <meta name="author" content="Jonnathan Carvalho">
   <meta name="keywords" content="Jonnathan Carvalho, IFF, UFF, Machine Learning, NLP, Deep Learning, Inteligência Artificial, Professor, Pesquisador">
@@ -180,6 +180,30 @@
     }
 
     .hero-text { animation: fadeUp 0.8s ease both; }
+
+    .hero-intro{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      margin-bottom:1.5rem
+    }
+    
+    .hero-photo{
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      object-fit:cover;
+      border:2px solid var(--border);
+      filter:grayscale(100%);
+      opacity:.85;
+      transition:filter .4s,opacity .4s;
+      flex-shrink:0
+    }
+    
+    .hero-photo:hover{
+      filter:grayscale(0%);
+      opacity:1
+    }
 
     .hero-label {
       font-family: var(--font-mono);
@@ -567,8 +591,11 @@
 <section class="hero" id="hero">
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="hero-label">Professor &amp; Pesquisador</div>
-      <h1>Jonnathan<br><em>Carvalho</em></h1>
+      <div class="hero-intro">
+        <img src="photo.png" alt="Jonnathan Carvalho" class="hero-photo">
+        <div class="hero-label">AI Researcher</div>
+      </div>
+      <h1>Prof. Jonnathan Carvalho</h1>
       <p class="hero-desc">Doutor em Computação pela UFF. Professor no Instituto Federal Fluminense desde 2011, com pesquisa focada em Inteligência Artificial, Machine Learning e Processamento de Linguagem Natural.</p>
       <div class="hero-links">
         <a href="#publications" class="btn btn-primary">Publicações ↓</a>
