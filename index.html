@@ -39,6 +39,7 @@
       --text-muted: #6B6B63;
       --accent: #2D5A27;
       --accent-light: #E8F0E7;
+      --badge-ptbr: #FAF7E6;
       --border: #E0DFD8;
       --card-bg: #FFFFFF;
       --radius: 12px;
@@ -442,7 +443,20 @@
       margin-bottom: 0.5rem;
     }
 
+    .sup-badge-ptbr {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      /*text-transform: uppercase;*/
+      /*letter-spacing: 0.1em;*/
+      padding: 0.1rem 0.5rem;
+      border-radius: 100px;
+      margin-bottom: 0.4rem;
+    }
+
     .badge-active { background: var(--accent-light); color: var(--accent); }
+    .badge-active-ptbr { background: var(--badge-ptbr); color: var(--text-muted); }
+    
     .badge-completed { background: var(--bg-alt); color: var(--text-muted); }
 
     /* ═══════════════════════════════════════════
@@ -918,6 +932,7 @@
 
       <div class="sup-card">
         <span class="sup-badge badge-active">2026 · IFF · Undergraduate research student</span>
+        <span class="sup-badge-ptbr badge-active-ptbr">Iniciação científica</span>
         <div class="sup-card-title">Tutor socrático offline: fine-tuning em Small Language Models para educação em contextos de baixo recurso</div>
         <div class="sup-card-meta">Davi Siqueira Tostes · Orientador: J. Carvalho</div>
       </div>
